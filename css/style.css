@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/*All around*/
+
+body{
+    background-color: #ADD38E;
+}
+
+nav{
+    background-color: #7D9D64;
+    padding: 1em;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 35px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+p{
+    font-size: 22px;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+   text-decoration: none;
+   font-size: 125%;
+   color: #FDF3DB;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 25px;
+}
+
+li a:hover{
+    color: #556b2f;
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #7D9D64;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer li{
+    display: block;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    display: flex;
+    align-self: flex-end;
+    font-size: 14px;
+}
+
+
+/*Side 1 - Forside*/
+
+/*billede, logo + boks med tekst*/
+.forside-sec1{
+    background-image: url(../billeder/citrus.jpg);
+    background-size: 200%;
+    background-position: center;
+    height: 40em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.forside-sec1 img{
+    border-radius: 50%;
+    margin-top: 10px;
+    width: 100px;
+    border: #000000 1px solid;
+}
+
+.navn{
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  -webkit-text-stroke: #FDF3DB 2px;
+}
+
+.forside-sec1 p{
+    font-size: 200%;
+}
+
+.forside-sec1 div{
+    background-color: #FDF3DB;
+    width: 80%;
+    border: 2px solid black;
+    position: absolute;
+    bottom: -10%;
+    padding: 1%;
+}
+
+.forside-sec1 p{
+    font-size: 150%;
+    text-align: center;
+}
+
+
+/*knapper*/
+.forside-sec2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 100px;
+}
+
+.forside-sec2 ul{
+    text-align: center;
+    background-color: #FDC581;
+    width: 60%;
+    padding: 1em;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.forside-sec2 li{
+    display: inline-block;
+}
+
+.forside-sec2 a:hover{
+    color: darkolivegreen;
+    text-decoration: underline;
+}
+
+.forside-sec2 a{
+    font-size: 150%;
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 769px){
+
+    /*Forside*/
+    .forside-sec1 img{
+        width: 145px;
+    }
+
+    .navn{
+        font-size: 80px;
+    }
+
+    .forside-sec1 div{
+        width: 54%;
+        bottom: -12%;
+    }
+
+    .forside-sec2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .forside-sec2 ul{
+        width: 30%;
+    }
+}
+
+/*Side 2 - Opskrifter*/
+
+/*tekst + logo*/
+.opskrifter-sec1 img{
+    border-radius: 50%;
+    max-width: 80px;
+    border: black 1px solid;
+    margin: 10px;
+    position: absolute;
+}
+
+.opskrifter-sec1 p{
+    text-align: center;
+    margin-right: 30px;
+}
+
+.opskrifter-sec1 ul{
+    margin-bottom: 15px;
+}
+
+.opskrifter-sec1{
+    border-bottom: #6b8854 2px double;
+    position: relative;
+}
+
+h1{
+    padding-top: 50px;
+}
+
+/*opskrifter*/
+.opskrift{
+    margin: 35px 25px 0 35px;
+    padding-bottom: 35px;
+    border-bottom: #6b8854 2px double;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-1{
+    margin: 5px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opskrift img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 75%;
+    margin: 10px;
+}
+
+.opskrift a{
+    color: darkblue;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.opskrift a:hover{
+    text-decoration: underline;
+}
+
+/*opsrkift 2 billede*/
+.img-1{
+    object-position: bottom;
+}
+
+/*Desktop*/
+@media screen and (min-width: 769px){
+    .opskrifter-sec1 p{
+        font-size: 22px;
+    }
+
+    .opskrift{
+        margin: 100px;
+        padding: 35px 10px;
+        position: relative;
+    }
+
+    .opskrift h2{
+        position: absolute;
+        left: 462px;
+        top: 50px;
+    }
+
+    .div-1{
+        display: flex;
+        flex-direction: row;
+        margin-left: 35px;
+    }
+
+    .opskrift img{
+        max-width: 350px;
+        margin-right: 57px;
+    }
+
+    .opskrift p{
+        width: 100%;
+    }
+
+    .div-1 div{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+    }
+
+    .citrus-text{
+        margin-left: 50px;
+    }
+}
+
+/*Kontakt*/
+
+/*logo+overskrift*/
+.kontakt-sec1{
+    position: relative;
+    border-bottom: #6b8854 2px double;
+}
+
+.kontakt-sec1 img{
+    border-radius: 50%;
+    max-width: 80px;
+    border: black 1px solid;
+    margin: 10px;
+    position: absolute;
+}
+
+/*kontakt info*/
