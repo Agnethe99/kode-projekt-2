@@ -71,7 +71,7 @@ footer a{
 footer p{
     display: flex;
     align-self: flex-end;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 
@@ -210,12 +210,16 @@ footer p{
 
 /*opskrifter*/
 .opskrift{
-    margin: 35px 25px 0 35px;
+    margin: 35px 25px 0 25px;
     padding-bottom: 35px;
     border-bottom: #6b8854 2px double;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.opskrift h2{
+    text-align: center;
 }
 
 .div-1{
@@ -228,7 +232,7 @@ footer p{
 .opskrift img{
     aspect-ratio: 1/1;
     object-fit: cover;
-    width: 75%;
+    width: 100%;
     margin: 10px;
 }
 
@@ -240,6 +244,10 @@ footer p{
 
 .opskrift a:hover{
     text-decoration: underline;
+}
+
+.opskrift p{
+    margin-bottom: 15px;
 }
 
 /*opsrkift 2 billede*/
@@ -286,9 +294,7 @@ footer p{
         align-self: flex-end;
     }
 
-    .citrus-text{
-        margin-left: 50px;
-    }
+
 }
 
 /*Kontakt*/
@@ -312,6 +318,7 @@ footer p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .kontakt-sec2 div{
@@ -386,12 +393,20 @@ input[type=submit]:hover{
 }
 
 @media screen and (min-width: 769px){
+    /*bobler*/
     .kontakt-sec2{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
     }
 
+    .kontakt-sec2 div{
+        border: none;
+        padding: 0;
+    }
+
+    /*kontaktformular*/
     .kontaktform{
         width: 65%;
     }
