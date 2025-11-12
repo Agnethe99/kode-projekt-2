@@ -27,7 +27,7 @@ h2{
 }
 
 p{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 nav li{
@@ -109,7 +109,7 @@ footer p{
 
 .forside-sec1 div{
     background-color: #FDF3DB;
-    width: 80%;
+    width: 87%;
     border: 2px solid black;
     position: absolute;
     bottom: -10%;

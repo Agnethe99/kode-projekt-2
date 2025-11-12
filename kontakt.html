@@ -29,8 +29,32 @@
             <img src="" alt="">
         </section>
 
-        <section>
-            
+        <section class="kontaktform">
+            <h2>Kontakt os</h2>
+            <p>Har du spørgsmål, eller kender du måske en opskrift, vi ikke har på listen, så udfyld formularen og vi vil vende tilbage hurtigst muligt.</p>
+            <form>
+                <label for="navn">Navn</label>
+                <input id="navn" type="text">
+
+                <label for="mail">E-mail</label>
+                <input id="mail" type="email">
+
+                <div>
+                <label for="emne">Emne</label>
+                    <select id="emne">
+                        <option value="0" selected="true" disabled>Emne</option>
+                        <option value="1">Spørgsmål</option>
+                        <option value="2">Feedback</option>
+                        <option value="3">Indsend opskrift</option>
+                        <option value="4">Andet</option>
+                    </select>
+                </div>
+
+                <label for="besked">Besked</label>
+                <textarea id="besked"></textarea>
+
+                <input type="submit" name="submit" value="Send besked">
+            </form>
         </section>
     </main>
     
