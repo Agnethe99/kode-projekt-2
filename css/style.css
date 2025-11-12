@@ -307,6 +307,27 @@ footer p{
     position: absolute;
 }
 
+/*bobler*/
+.kontakt-sec2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kontakt-sec2 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: #7D9D64 1px solid;
+    margin: 20px 0;
+    padding: 10%;
+}
+
+.kontakt-sec2 img{
+    margin-bottom: 15px;
+}
+
+
 /*kontakt info*/
 .kontaktform {
   border-radius: 5px;
@@ -314,6 +335,11 @@ footer p{
   padding: 1.3em;
   width: 80%;
   margin: 0 auto 1em auto;
+}
+
+.kontaktform h2{
+    text-align: center;
+    margin-bottom: 0.5em;
 }
 
 input[type=text], input[type=email], select, textarea{
@@ -360,6 +386,12 @@ input[type=submit]:hover{
 }
 
 @media screen and (min-width: 769px){
+    .kontakt-sec2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     .kontaktform{
         width: 65%;
     }
