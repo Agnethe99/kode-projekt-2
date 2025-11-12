@@ -19,7 +19,8 @@ nav{
 h1{
     text-align: center;
     margin-bottom: 1em;
-    font-size: 35px;
+    padding-top: 50px;
+    font-size: 40px;
 }
 
 h2{
@@ -207,10 +208,6 @@ footer p{
     position: relative;
 }
 
-h1{
-    padding-top: 50px;
-}
-
 /*opskrifter*/
 .opskrift{
     margin: 35px 25px 0 35px;
@@ -311,3 +308,59 @@ h1{
 }
 
 /*kontakt info*/
+.kontaktform {
+  border-radius: 5px;
+  border: 2px solid #7D9D64;
+  padding: 1.3em;
+  width: 80%;
+  margin: 0 auto 1em auto;
+}
+
+input[type=text], input[type=email], select, textarea{
+	width: 100%;
+	padding: 1em;
+	border: 1px solid gray;
+	border-radius: 4px;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+select, input[type=submit]{
+	cursor: pointer;
+}
+
+input[type=submit]{
+	background-color: #FDC581;
+	color: rgb(0, 0, 0);
+	padding: 0.8em 1.5em;
+	border: none;
+	border-radius: 20px;
+	width: 100%;
+	font-size: 18px;
+}
+
+input[type=submit]:hover{
+	color: #7D9D64;
+    text-decoration: underline;
+}
+
+::placeholder{
+	color: black;
+}
+
+.visually-hidden{
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+@media screen and (min-width: 769px){
+    .kontaktform{
+        width: 65%;
+    }
+}
