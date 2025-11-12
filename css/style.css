@@ -335,6 +335,16 @@ footer p{
     margin-bottom: 15px;
 }
 
+.kontakt-sec2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.kontakt-sec2 a:hover{
+    color: #7D9D64;
+    text-decoration: underline;
+}
 
 /*kontakt info*/
 .kontaktform {
