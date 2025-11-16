@@ -49,15 +49,18 @@
             <p>Har du spørgsmål, eller kender du måske en opskrift, vi ikke har på listen, så udfyld formularen, og vi vil vende tilbage hurtigst muligt.</p>
             <form>
                 <label class="visually-hidden" for="navn">Navn</label>
-                <input id="navn" type="text" placeholder="Navn" required>
+                <input id="navn" type="text" placeholder="Navn" required autocomplete="name">
+
+                <label class="visually-hidden" for="tlf">Telefon</label>
+                <input id="tlf" type="tel" placeholder="Telefon" autocomplete="tel">
 
                 <label class="visually-hidden" for="mail">E-mail</label>
-                <input id="mail" type="email" placeholder="E-mail" required>
+                <input id="mail" type="email" placeholder="E-mail" required autocomplete="email">
 
                 <div>
-                <label for="emne">Emne</label>
+                <label class="visually-hidden" for="emne">Emne</label>
                     <select id="emne">
-                        <option value="0" selected="true" disabled>Vælg emne</option>
+                        <option value="0" selected disabled>Vælg emne</option>
                         <option value="1">Spørgsmål</option>
                         <option value="2">Feedback</option>
                         <option value="3">Indsend opskrift</option>
@@ -65,7 +68,7 @@
                     </select>
                 </div>
 
-                <label for="besked">Besked</label>
+                <label class="visually-hidden" for="besked">Besked</label>
                 <textarea id="besked" cols="30" rows="10" placeholder="Skriv din besked her..."></textarea>
 
                 <input type="submit" name="submit" value="Send besked">

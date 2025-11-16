@@ -68,6 +68,10 @@ footer a{
     color: black;
 }
 
+footer a:hover{
+    color: #FDF3DB;
+}
+
 footer p{
     display: flex;
     align-self: flex-end;
@@ -156,7 +160,7 @@ footer p{
     text-decoration: none;
 }
 
-/*---------------------------side 1 desktop-------------------------------*/
+/*---------------------------side 1 - forside - desktop-------------------------------*/
 @media screen and (min-width: 769px){
 
     /*forside*/
@@ -235,6 +239,8 @@ footer p{
     object-fit: cover;
     width: 100%;
     margin: 10px;
+    border-radius: 20px;
+    border: black 2px solid;
 }
 
 .opskrift a{
@@ -314,7 +320,7 @@ footer p{
     position: absolute;
 }
 
-/*bobler*/
+/*kontakt bobler*/
 .kontakt-sec2{
     display: flex;
     flex-direction: column;
@@ -342,17 +348,22 @@ footer p{
 }
 
 .kontakt-sec2 a:hover{
-    color: #7D9D64;
+    color: #323f27;
     text-decoration: underline;
 }
 
 /*kontakt info*/
-.kontaktform {
-  border-radius: 5px;
-  border: 2px solid #7D9D64;
+.kontaktform{
+  border-radius: 20px;
+  background-color: #7d9d64c1;
   padding: 1.3em;
   width: 80%;
-  margin: 0 auto 1em auto;
+  margin: 0 auto 2em auto;
+}
+
+.kontaktform p{
+    font-size: 18px;
+    margin-bottom: 0.5em;
 }
 
 .kontaktform h2{
@@ -360,13 +371,14 @@ footer p{
     margin-bottom: 0.5em;
 }
 
-input[type=text], input[type=email], select, textarea{
+input[type=text], input[type=email], input[type=tel], select, textarea{
 	width: 100%;
 	padding: 1em;
 	border: 1px solid gray;
 	border-radius: 4px;
 	margin-top: 0.5em;
 	margin-bottom: 1em;
+    font-size: 18px;
 }
 
 select, input[type=submit]{
@@ -390,6 +402,7 @@ input[type=submit]:hover{
 
 ::placeholder{
 	color: black;
+    font-size: 18px;
 }
 
 .visually-hidden{
@@ -410,16 +423,18 @@ input[type=submit]:hover{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: start;
         margin-bottom: 30px;
     }
 
     .kontakt-sec2 div{
         border: none;
         padding: 0;
+        margin: 25px 0 20px 0;
     }
 
     /*kontaktformular*/
     .kontaktform{
-        width: 65%;
+        width: 50%;
     }
 }
