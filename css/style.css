@@ -173,7 +173,7 @@ footer p{
     }
 
     .forside-sec1 div{
-        width: 54%;
+        width: 60%;
         bottom: -12%;
     }
 
@@ -269,7 +269,7 @@ footer p{
     }
 
     .opskrift{
-        margin: 100px;
+        margin: 0 50px;
         padding: 35px 10px;
         position: relative;
     }
@@ -292,13 +292,14 @@ footer p{
     }
 
     .opskrift p{
-        width: 100%;
+        width: 80%;
     }
 
     .div-1 div{
         display: flex;
         flex-direction: column;
         align-self: flex-end;
+        padding-bottom: 10px;
     }
 
 
