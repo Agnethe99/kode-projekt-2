@@ -354,11 +354,11 @@ footer p{
 
 /*kontakt info*/
 .kontaktform{
-  border-radius: 20px;
-  background-color: #7d9d64c1;
-  padding: 1.3em;
-  width: 80%;
-  margin: 0 auto 2em auto;
+    border-radius: 20px;
+    background-color: #7d9d64c1;
+    padding: 1.3em;
+    width: 80%;
+    margin: 0 auto 2em auto;
 }
 
 .kontaktform p{
