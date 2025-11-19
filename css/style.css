@@ -54,9 +54,13 @@ li a:hover{
 
 footer{
     background-color: #7D9D64;
+    padding: 20px;
+}
+
+footer div{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
 }
 
 footer li{
@@ -162,6 +166,11 @@ footer p{
 
 /*---------------------------side 1 - forside - desktop-------------------------------*/
 @media screen and (min-width: 769px){
+
+    footer div{
+        display: flex;
+        justify-content: space-evenly;
+    }
 
     /*forside*/
     .forside-sec1 img{
