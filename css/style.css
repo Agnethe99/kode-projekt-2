@@ -238,8 +238,7 @@ footer p{
 
 .div-1{
     margin: 5px 40px 0 40px;
-    display: flex;
-    flex-direction: column;
+
     align-items: center;
 }
 
@@ -277,7 +276,7 @@ footer p{
     .opskrifter-sec1 p{
         font-size: 22px;
     }
-
+    
     .div-1{
         display: flex;
         flex-direction: row;
@@ -302,10 +301,12 @@ footer p{
 
 @media screen and (min-width: 992px){
 
+    .opskrift{
+        margin-left: 55px;
+    }
+
     .div-1{
-        display: flex;
-        flex-direction: row;
-        margin-left: 35px;
+        margin-left: 80px;
     }
 
     .div-1 img{
@@ -313,7 +314,7 @@ footer p{
     }
 
     .opskrift p{
-        width: 100%;
+        width: 80%;
     }
 }
 
