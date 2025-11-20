@@ -118,7 +118,7 @@ footer p{
 
 .forside-sec1 div{
     background-color: #FDF3DB;
-    width: 87%;
+    width: 90%;
     border: 2px solid black;
     position: absolute;
     bottom: -10%;
@@ -273,21 +273,34 @@ footer p{
 
 /*-----------------------side 2 - opskrifter - desktop----------------------------*/
 @media screen and (min-width: 769px){
+
     .opskrifter-sec1 p{
         font-size: 22px;
     }
 
-    .opskrift{
-        margin: 0 50px;
-        padding: 35px 10px;
-        position: relative;
+    .div-1{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .div-1 img{
+        max-width: 300px;
     }
 
     .opskrift h2{
-        position: absolute;
-        left: 462px;
-        top: 50px;
+        display: flex;
+        align-self: flex-start;
+        margin-left: 6vw;
     }
+
+    .div-1 div{
+        padding-left: 20px;
+        align-self:last baseline;
+    }
+}
+
+
+@media screen and (min-width: 992px){
 
     .div-1{
         display: flex;
@@ -295,23 +308,13 @@ footer p{
         margin-left: 35px;
     }
 
-    .opskrift img{
+    .div-1 img{
         max-width: 350px;
-        margin-right: 57px;
     }
 
     .opskrift p{
-        width: 80%;
+        width: 100%;
     }
-
-    .div-1 div{
-        display: flex;
-        flex-direction: column;
-        align-self: flex-end;
-        padding-bottom: 10px;
-    }
-
-
 }
 
 /*-----------------------side 3 - kontakt-----------------------------------------*/
